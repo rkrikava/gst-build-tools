@@ -1,0 +1,7 @@
+Windows GStreamer Build Tools
+-----------------------------
+
+pkg-config
+
+Originates from GStreamer 1.21.3 windows binary install package
+https://gstreamer.freedesktop.org/data/pkg/windows/1.20.3/msvc
