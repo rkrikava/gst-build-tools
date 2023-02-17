@@ -1,7 +1,76 @@
 Windows GStreamer Build Tools
 -----------------------------
 
-pkg-config
-
-Originates from GStreamer 1.21.3 windows binary install package
+Originally from:
 https://gstreamer.freedesktop.org/data/pkg/windows/1.20.3/msvc
+
+  pkg-config.exe
+  libwinpthread-1.dll*
+
+Originally from:
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-win64.zip
+
+  nasm.exe
+  ndisasm.exe*
+  LICENSE-NASM (LICENSE)
+
+Originally from:
+https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bit-portable.zip
+
+  Minimal contents dictated by:
+  https://packages.ubuntu.com/kinetic-updates/amd64/perl/filelist
+  
+  License-Perl.rtf (License.rtf)
+  corelist.bat
+  cpan*
+  cpan.bat
+  enc2xs*
+  enc2xs.bat
+  encguess*
+  encguess.bat
+  h2ph.bat
+  h2xs.bat
+  instmodsh*
+  instmodsh.bat
+  json_pp*
+  json_pp.bat
+  libgcc_s_seh-1.dll*
+  libnetcfg.bat
+  libstdc++-6.dll*
+  nssm_32.exe*
+  nssm_64.exe*
+  perl.exe*
+  perl5.32.1.exe*
+  perl532.dll*
+  perlbug.bat
+  perldoc.bat
+  perlglob.exe*
+  perlivp.bat
+  perlthanks.bat
+  piconv*
+  piconv.bat
+  pkg-config.exe*
+  pl2bat.bat
+  pl2bat.pl*
+  pl2pm.bat
+  pod2html.bat
+  pod2man.bat
+  pod2text.bat
+  pod2usage.bat
+  podchecker*
+  podchecker.bat
+  prove.bat
+  ptar*
+  ptar.bat
+  ptardiff*
+  ptardiff.bat
+  ptargrep*
+  ptargrep.bat
+  shasum.bat
+  splain.bat
+  streamzip*
+  streamzip.bat
+  wperl.exe*
+  xsubpp.bat
+  zipdetails*
+  zipdetails.bat
