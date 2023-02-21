@@ -1,0 +1,3 @@
+# Meson sets eol=lf for text files
+*.patch eol=lf
+
