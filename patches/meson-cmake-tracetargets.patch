@@ -1,0 +1,19 @@
+diff --git a/mesonbuild/cmake/tracetargets.py b/mesonbuild/cmake/tracetargets.py
+index d64d1a1de..36cd3c0dd 100644
+--- a/mesonbuild/cmake/tracetargets.py
++++ b/mesonbuild/cmake/tracetargets.py
+@@ -54,7 +54,13 @@ def resolve_cmake_trace_targets(target_name: str,
+                 # CMake brute-forces a combination of prefix/suffix combinations to find the
+                 # right library. Assume any bare argument passed which is not also a CMake
+                 # target must be a system library we should try to link against.
+-                res.libraries += clib_compiler.find_library(curr, env, [])
++                # Note: This bug was already filed with meson, with a fix, but was still open as of 2/21/23
++                # See: https://github.com/mesonbuild/meson/pull/11191
++                found = clib_compiler.find_library(curr, env, [])
++                if found is not None:
++                    res.libraries += clib_compiler.find_library(curr, env, [])
++                else:
++                    not_found_warning(curr)
+             else:
+                 not_found_warning(curr)
+             continue
